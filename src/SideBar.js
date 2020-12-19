@@ -1,5 +1,6 @@
 import React from 'react'
 import SideBarRow from './SideBarRow'
+import './SideBar.css'
 import EmojiFlagsIcon from '@material-ui/icons/EmojiFlags';
 import PeopleIcon from '@material-ui/icons/People';
 import ChatIcon from '@material-ui/icons/Chat';
