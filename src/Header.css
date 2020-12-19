@@ -1,0 +1,70 @@
+.header-left > img {
+    height: 60px;
+}
+.header {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+}
+.header-left {
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-input {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    padding: 10px;   
+    background: rgb(235, 234, 234);
+    border-radius: 33px;
+}
+.header-input > input {
+    border: none;
+    background: transparent;
+    border-width: 0;
+}
+.header-center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.header-right {
+    display: flex;
+}
+.header-center .header-option {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.header-center .header-option .MuiSvgIcon-root {
+    color: grey;
+}
+
+.header-center .header-option:hover .MuiSvgIcon-root {
+    color: #2e81f4;
+}
+
+.header-center .header-option:hover {
+    background: #eff2ef;
+    border-radius: 10px;
+    padding: 0 30px;
+    align-items: center;
+    border-bottom: none;
+
+}
+.header-right .header-info {
+    display: flex;
+    align-items: center;
+}
+.header-right {
+    display: flex;
+}
+.header-right .header-info h4 {
+    margin-left: 10px;
+}
