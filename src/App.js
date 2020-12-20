@@ -5,8 +5,9 @@ import SideBar from './SideBar'
 import Feed from './Feed';
 import Widgets from './Widgets';
 import LogIn from './LogIn';
+import { useStateValue } from "./StateProvider";
 function App() {
-  let user = null;
+  const [{user}, dispatch] = useStateValue();
   return (
     < div className="app" >
       { 

@@ -8,6 +8,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './Post.css'
 
 function Post({profilePic, image, userName, timeStamp, message}) {
+    
     return (
         <div className="post">
             <div className="post-top">
@@ -21,7 +22,7 @@ function Post({profilePic, image, userName, timeStamp, message}) {
                 <p>{message}</p>
             </div>
             <div className="post-image">
-                <image src={image} alt="" />
+                <img src={image} alt="" />
             </div>
             <div className="post-options">
                 <div className="post-option">
