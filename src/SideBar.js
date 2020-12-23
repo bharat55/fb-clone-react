@@ -7,10 +7,12 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
+import { useStateValue } from "./StateProvider";
 function SideBar() {
+    const [{user}, dispatch] = useStateValue();
     return (
         <div className="side-bar">
-            <SideBarRow imageUrl={'https://pbs.twimg.com/media/CUkqNGeUwAQBJeq.jpg'} title="Bharat Rathor" />
+            <SideBarRow imageUrl={user.photoURL} title={user.displayName} />
             <SideBarRow Icon={AddToPhotosIcon} title={"Covid19 Info center"}/>
             <SideBarRow Icon={EmojiFlagsIcon} title={"Pages"}/>
             <SideBarRow Icon={PeopleIcon} title={"Friends"}/>
