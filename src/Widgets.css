@@ -1,0 +1,62 @@
+.widgets {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  background-color: whitesmoke;
+  position: sticky;
+  height: 100vh;
+}
+
+.widgets .tab-heading {
+  background-color: gray;
+  padding: 10px;
+}
+.developer-skills ul {
+  list-style: none;
+  text-align: left;
+}
+.developer-skills ul li::before{ 
+  content: "\00BB";
+  margin-right: 20px;
+} 
+.developer-skills ul li {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  left: 0;
+}
+.developer-info {
+  position: relative;  
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.widgets .main-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.developer-info img {
+  width: 300px;
+  height: 400px;
+  object-fit: contain;
+  box-shadow: 0 5px 17px -7px rgba(0, 0, 0, 0.75);  
+  transition: transform 100ms ease-in;
+  
+}
+.developer-info h4 {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: cursive;
+}
+.widgets .contact-option-icons {
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+}
+.icon-with-link {
+  display: flex;
+}
